@@ -1,0 +1,21 @@
+<div class="add-question-container">
+  <h2>Add Quiz Question</h2>
+  <form (submit)="addQuestion()">
+    <input type="text" [(ngModel)]="question" placeholder="Question" required />
+    <div *ngFor="let option of options; let i = index">
+      <input
+        type="text"
+        [(ngModel)]="options[i]"
+        placeholder="Option {{ i + 1 }}"
+        required
+      />
+    </div>
+    <input
+      type="text"
+      [(ngModel)]="answer"
+      placeholder="Correct Answer"
+      required
+    />
+    <button type="submit">Add Question</button>
+  </form>
+</div>

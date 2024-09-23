@@ -1,0 +1,30 @@
+nav {
+    background-color: #026aa7;
+    padding: 10px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+    font-size: larger;
+    font-weight: bolder;
+  }
+
+  h1{
+    align-self: center;
+  }
+
+  img{
+    width: 100%;
+  }

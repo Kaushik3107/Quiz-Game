@@ -1,0 +1,13 @@
+<div class="quiz-container">
+  <h2>Quiz</h2>
+  <div *ngIf="currentQuestionIndex < questions.length">
+    <p>{{ questions[currentQuestionIndex].question }}</p>
+    <div *ngFor="let option of questions[currentQuestionIndex].options">
+      <button (click)="answerQuestion(option)">{{ option }}</button>
+    </div>
+  </div>
+  <div *ngIf="currentQuestionIndex >= questions.length">
+    <h3>Your Score: {{ score }} / {{ questions.length }}</h3>
+    <button (click)="logout()">Logout</button>
+  </div>
+</div>
